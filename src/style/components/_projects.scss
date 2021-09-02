@@ -1,0 +1,20 @@
+.projects {
+  width: 100%;
+
+  &__container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    span {
+      font-size: 1rem;
+      color: #865cda;
+    }
+    h1 {
+      color: #2b1259;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 2.5rem;
+    }
+  }
+}

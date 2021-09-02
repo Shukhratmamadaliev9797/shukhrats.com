@@ -1,0 +1,35 @@
+.btn {
+  font-size: 1.12rem;
+  @media only screen and (max-width: 1550px) {
+    font-size: 1rem;
+  }
+  &_outline {
+    border: 1.8px solid #2b1259;
+    color: #2b1259;
+    border-radius: 30px;
+    &:hover {
+      background-color: #2b1259;
+      border: 1.8px solid #2b1259;
+    }
+  }
+  &_primary {
+    border: 1.8px solid #865cda;
+    color: #fff;
+    background-color: #865cda;
+    border-radius: 10px;
+    &:hover {
+      color: #865cda;
+      border: 1.8px solid #865cda;
+      background-color: #fff;
+    }
+  }
+  &_text {
+    border: none;
+    color: #865cda;
+    margin-left: 1.5rem;
+    &:hover {
+      background-color: transparent;
+      color: #865cda;
+    }
+  }
+}

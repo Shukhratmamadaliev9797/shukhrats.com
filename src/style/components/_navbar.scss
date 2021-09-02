@@ -1,0 +1,20 @@
+.navbar {
+  font-size: 1.1rem;
+  &__brand {
+    width: 5rem;
+  }
+
+  &_link {
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    margin-right: 1.5rem;
+    transition: all 0.5s ease-in;
+
+    &:hover {
+      border-width: 100%;
+    }
+    a {
+      font-weight: bold;
+    }
+  }
+}

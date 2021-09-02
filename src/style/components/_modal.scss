@@ -1,0 +1,80 @@
+.modal {
+  &__header {
+    background-color: #f5f4fb;
+  }
+  &__body {
+    background-color: #f5f4fb;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2b1259;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+    &_left {
+      iframe {
+        width: 100%;
+        height: 70vh;
+      }
+    }
+    &_right {
+      padding: 2rem;
+      width: 90%;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 0.5rem;
+      &-category {
+        h4 {
+          font-size: 1.4rem;
+          color: #865cda;
+        }
+      }
+      &-technologies {
+        dl {
+          font-size: 0.8rem;
+          column-count: 2;
+          color: #887f9c;
+        }
+      }
+      &-features {
+        dl {
+          font-size: 0.8rem;
+          column-count: 2;
+          color: #887f9c;
+        }
+      }
+      &-deploy {
+        p {
+          font-size: 1rem;
+          color: #887f9c;
+        }
+      }
+      &-responsive {
+        p {
+          font-size: 1rem;
+          color: #887f9c;
+        }
+      }
+      &-note {
+        color: #887f9c;
+      }
+      &-buttons {
+        display: flex;
+        margin-top: 4rem;
+        justify-content: space-around;
+        div {
+          width: 150px !important;
+          height: 50px;
+
+          text-align: center;
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.about {
+  width: 100%;
+  // height: 100vh;
+  padding: 10rem 0;
+  overflow: hidden;
+  @media only screen and (max-width: 950px) {
+    padding: 0;
+  }
+  &__container {
+    width: 70%;
+
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media only screen and (max-width: 1500px) {
+      width: 80%;
+    }
+    @media only screen and (max-width: 1350px) {
+      width: 90%;
+    }
+    @media only screen and (max-width: 1150px) {
+      width: 95%;
+    }
+    @media only screen and (max-width: 950px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media only screen and (max-width: 950px) {
+        width: 80%;
+        margin: 0 auto;
+      }
+      &_imgContainer {
+        position: relative;
+        width: 70%;
+        height: 600px;
+        @media only screen and (max-width: 950px) {
+          width: 60%;
+          height: 500px;
+        }
+        @media only screen and (max-width: 650px) {
+          width: 80%;
+          height: 500px;
+        }
+        @media only screen and (max-width: 450px) {
+          width: 100%;
+          height: 400px;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          border: 10px solid #865cda;
+          width: 100%;
+          height: 600px;
+          z-index: -1000;
+          left: -2rem;
+          bottom: 0;
+          right: 0;
+          top: -2rem;
+          border-radius: 0.5rem;
+          @media only screen and (max-width: 950px) {
+            width: 100%;
+            height: 500px;
+          }
+          @media only screen and (max-width: 650px) {
+            width: 100%;
+            height: 500px;
+          }
+          @media only screen and (max-width: 450px) {
+            width: 100%;
+            height: 400px;
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 0.5rem;
+          object-fit: cover;
+        }
+      }
+    }
+    &-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media only screen and (max-width: 950px) {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 8rem;
+        text-align: center;
+        // margin-left: 10rem;
+      }
+      &-text {
+        span {
+          font-size: 1.2rem;
+          color: #887f9c;
+        }
+        h1 {
+          color: #2b1259;
+          font-family: "Alfa Slab One", cursive;
+          font-size: 2rem;
+          line-height: 1.3;
+          width: 70%;
+          @media only screen and (max-width: 1150px) {
+            font-size: 1.7rem;
+            margin: 0 auto;
+            width: 80%;
+          }
+          @media only screen and (max-width: 950px) {
+            width: 100%;
+          }
+          span {
+            font-size: 2rem;
+            color: #865cda;
+          }
+        }
+        p {
+          margin-top: 2rem;
+          margin-bottom: 3rem;
+          font-size: 1rem;
+          color: #887f9c;
+          width: 80%;
+
+          @media only screen and (max-width: 1150px) {
+            font-size: 0.9rem;
+            width: 90%;
+            margin: 0 auto;
+          }
+          @media only screen and (max-width: 950px) {
+            width: 100%;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
