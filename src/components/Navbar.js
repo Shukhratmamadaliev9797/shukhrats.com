@@ -55,15 +55,9 @@ export default function NavigationBar() {
             >
               Projects
             </Nav.Link>
-            <Button
-              data-aos="fade-down"
-              data-aos-delay="250"
-              className="btn_outline"
-              variant="outline-primary"
-              href="#contact"
-            >
+            <button className="button-29" href="#contact">
               Contact Me
-            </Button>
+            </button>
           </Nav>
         </Navbar.Collapse>
       </Container>

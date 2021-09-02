@@ -43,13 +43,13 @@ export default function Projects() {
                 return <li>{tech}</li>;
               })}
             </ul>
-            <Button
+            <button
               onClick={() => handleShow(values, project)}
-              className="btn_outline"
+              className="button-29"
               variant="outline-primary"
             >
               Learn more
-            </Button>
+            </button>
           </div>
         </SwiperSlide>
       );

@@ -154,7 +154,7 @@ export default function Contact() {
                 />
               </div>
               <div className="contact__card_field-buttonField">
-                <button type="submit" value="Submit">
+                <button className="button-29" type="submit" value="Submit">
                   Send a Message
                 </button>
               </div>
