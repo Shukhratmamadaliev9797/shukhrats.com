@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header";
 import NavigationBar from "./components/Navbar";
 import About from "./components/About";
@@ -11,6 +11,7 @@ import "./style/app.scss";
 import "aos/dist/aos.css";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Setting from "./components/Setting";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Projects />
         <Contact />
         <Footer />
+        <Setting />
       </div>
     </Router>
   );

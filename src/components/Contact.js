@@ -81,13 +81,19 @@ export default function Contact() {
               </ul>
               <ul className="contact__card_info-socialLinks">
                 <li>
-                  <i class="fab fa-twitter"></i>
+                  <a href="https://twitter.com/Shukhrat0969">
+                    <i class="fab fa-twitter"></i>
+                  </a>
                 </li>
                 <li>
-                  <i class="fab fa-linkedin-in"></i>
+                  <a href="https://www.linkedin.com/in/shukhrat-mamadaliev-b5423019a/">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
                 </li>
                 <li>
-                  <i class="fab fa-github"></i>
+                  <a href="https://github.com/Shukhratmamadaliev9797">
+                    <i class="fab fa-github"></i>
+                  </a>
                 </li>
               </ul>
             </div>

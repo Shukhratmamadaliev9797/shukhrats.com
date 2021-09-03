@@ -25,18 +25,14 @@
     border-radius: 0.8rem;
     display: grid;
     grid-template-columns: 40% 60%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: $boxShadow;
     &_info {
       background-color: #2b1259;
       margin: 1rem;
       border-radius: 0.8rem;
       color: #fff;
       padding: 2rem 4rem;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      box-shadow: $boxShadow;
       &-title {
         font-family: "Alfa Slab One", cursive;
 
@@ -45,7 +41,7 @@
         }
         p {
           font-size: 1rem;
-          color: #887f9c;
+          // color: #887f9c;
         }
       }
       &-info {
@@ -55,6 +51,8 @@
           font-size: 1rem;
           margin: 2rem 0;
           margin-left: -2rem;
+          transition: all 0.5s linear;
+
           i {
             margin-right: 1.5rem;
           }
@@ -68,6 +66,15 @@
         li {
           font-size: 1.5rem;
           margin-left: -2rem;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          a {
+          }
         }
       }
     }
@@ -94,10 +101,15 @@
         input {
           width: 100%;
           font-size: 1rem;
-          padding: 0.3rem;
+          padding: 0.5rem;
           border-radius: 0.3rem;
-          border: 1px solid #887f9c;
+          border: none;
           outline: none;
+          box-shadow: $boxShadow;
+          transition: all 0.5s linear;
+          &:focus {
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+          }
         }
       }
       &-textArea {
@@ -113,8 +125,13 @@
           height: 25vh;
           padding: 1rem;
           border-radius: 0.3rem;
-          border: 1px solid #887f9c;
+          border: none;
           outline: none;
+          box-shadow: $boxShadow;
+          transition: all 0.5s linear;
+          &:focus {
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+          }
         }
       }
       &-buttonField {

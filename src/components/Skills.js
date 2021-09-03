@@ -3,6 +3,7 @@ import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import data from "../data";
 import Button from "./Button";
 import AOS from "aos";
+
 export default function Skills() {
   const [selectedSkill, setSelectedSkill] = useState(data.skills[0]);
 
@@ -22,12 +23,9 @@ export default function Skills() {
           </div>
           <div className="skills__left_cardsContainers">
             {data.skills.map((skill, index) => {
-              const delay = 500 * index;
               return (
                 <div
                   key={skill._id}
-                  // data-aos="zoom-in"
-                  // data-aos-delay={`${delay}`}
                   className="skills__left_card"
                   onClick={() => setSelectedSkill(skill)}
                 >
@@ -38,7 +36,14 @@ export default function Skills() {
           </div>
         </div>
         <div className="skills__right">
-          <div className="skills__right_cardContainer">
+          <div key={selectedSkill._id} className="skills__right_cardContainer">
+            <div className="skills__right_card-img">
+              <img
+                data-aos="zoom-in"
+                src={selectedSkill.picture}
+                alt={selectedSkill.name}
+              />
+            </div>
             <div className="skills__right_card-title">
               <h1 data-aos="zoom-in">{selectedSkill.name}</h1>
             </div>
@@ -48,7 +53,7 @@ export default function Skills() {
                   const delay = 500 * index;
                   return (
                     <li data-aos="zoom-in" data-aos-delay={`${delay}`}>
-                      {des}
+                      - {des}
                     </li>
                   );
                 })}

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Container, Nav } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
 import AOS from "aos";
+
 export default function NavigationBar() {
   useEffect(() => {
     AOS.init({
@@ -10,6 +10,7 @@ export default function NavigationBar() {
       offset: 50,
     });
   }, []);
+
   return (
     <Navbar className="navbar" collapseOnSelect expand="lg">
       <Container>

@@ -6,7 +6,6 @@ import data from "../data.js";
 import "swiper/swiper.min.css";
 import "swiper/components/effect-coverflow/effect-coverflow.min.css";
 import "swiper/components/pagination/pagination.min.css";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import ButtonLink from "./ButtonLink.js";
 

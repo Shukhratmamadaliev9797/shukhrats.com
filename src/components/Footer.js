@@ -25,7 +25,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer__top-contact">
-            <h3>Contact Me</h3>
+            <h3>| Contact Me</h3>
             <ul>
               <li>
                 <i class="fas fa-phone-square-alt"></i> +447523230970
@@ -42,21 +42,45 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer__top-service">
-            <h3>Services</h3>
+            <h3>| Services</h3>
             <ul>
-              <li>Web Development</li>
-              <li>Web Design</li>
-              <li>Responsive Design</li>
-              <li>Deployment</li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Web Development
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Web Design
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Responsive Design
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Deployment
+              </li>
             </ul>
           </div>
           <div className="footer__top-links">
-            <h3>Quick Links</h3>
+            <h3>| Quick Links</h3>
             <ul>
-              <li>About me</li>
-              <li>Skills</li>
-              <li>Projects</li>
-              <li>Contact</li>
+              <li>
+                <a href="#about">
+                  <i class="fas fa-angle-double-right"></i> About me
+                </a>
+              </li>
+              <li>
+                <a href="#skills">
+                  <i class="fas fa-angle-double-right"></i> Skills
+                </a>
+              </li>
+              <li>
+                <a href="#projects">
+                  <i class="fas fa-angle-double-right"></i> Projects
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <i class="fas fa-angle-double-right"></i> Contact
+                </a>
+              </li>
             </ul>
           </div>
         </div>

@@ -36,9 +36,8 @@
       background-color: #fff;
       transition: all 0.5s linear;
       cursor: pointer;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      box-shadow: $boxShadow;
+
       &:hover {
         // background-color: #865cda;
         transform: scale(1.1);
@@ -57,19 +56,26 @@
       background-color: #fff;
       border-radius: 0.5rem;
       transition: all 1s linear;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      box-shadow: $boxShadow;
+      position: relative;
+      transition: all 0.5s linear;
     }
     &_card {
+      &-img {
+        position: absolute;
+        width: 130px;
+        right: 2rem;
+      }
       &-title {
         h1 {
           color: #2b1259;
           font-family: "Alfa Slab One", cursive;
           margin-left: 2rem;
+          // animation: down 0.5s linear forwards;
         }
       }
       &-description {
+        width: 80%;
         li {
           font-size: 1rem;
           color: #887f9c;
